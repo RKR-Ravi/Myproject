@@ -15,8 +15,7 @@ public class HomePage {
 	}
 	@FindBy(linkText = "Products")
 	private WebElement ProductsLink;
-	@FindBy(linkText = "Products")
-	private WebElement ProductsLink1;
+	
 	
 	@FindBy(linkText = "Documents")
 	private WebElement DocumentsLink;
