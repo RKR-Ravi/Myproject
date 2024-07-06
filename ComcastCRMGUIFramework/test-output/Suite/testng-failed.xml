@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test-2(failed)">
+    <parameter name="BROWSER" value="edge"/>
+    <classes>
+      <class name="com.comcast.crm.contacttest.CreateContactTest">
+        <methods>
+          <include name="CreateContactWithSupportDateTest"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="createcontactwithorgtest"/>
+        </methods>
+      </class> <!-- com.comcast.crm.contacttest.CreateContactTest -->
+    </classes>
+  </test> <!-- Test-2(failed) -->
+  <test thread-count="2" parallel="tests" name="Test-1(failed)">
+    <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="com.comcast.crm.orgtest.CreateOrganizationTestWithPom">
+        <methods>
+          <include name="CreateOrganizationTest"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="configBM"/>
+          <include name="CreateOrgWithindustryTest1"/>
+          <include name="configAM"/>
+        </methods>
+      </class> <!-- com.comcast.crm.orgtest.CreateOrganizationTestWithPom -->
+    </classes>
+  </test> <!-- Test-1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
