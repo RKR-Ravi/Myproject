@@ -13,8 +13,8 @@ public class HomePage {
 		this.driver=driver;
 		PageFactory.initElements(driver,this);
 	}
-	@FindBy(linkText = "Products")
-	private WebElement ProductsLink;
+//	@FindBy(linkText = "Products")
+//	private WebElement ProductsLink;
 	
 	@FindBy(linkText = "Documents")
 	private WebElement DocumentsLink;
@@ -23,8 +23,8 @@ public class HomePage {
 		return DocumentsLink;
 	}
 
-	public WebElement getProductsLink() {
-		return ProductsLink;
+//	public WebElement getProductsLink() {
+//		return ProductsLink;
 	}
 	@FindBy(linkText = "Organizations")
 	private WebElement orgLink;
