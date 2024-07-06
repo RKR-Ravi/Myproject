@@ -25,7 +25,7 @@ public class HomePage {
 
 //	public WebElement getProductsLink() {
 //		return ProductsLink;
-	}
+//	}
 	@FindBy(linkText = "Organizations")
 	private WebElement orgLink;
 	
