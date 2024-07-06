@@ -43,7 +43,7 @@ public class CreateOrganizationTestWithPom extends BaseClass{
  		cop.CreateOrg(orgname);
  		UtilityClassObject.getTest().log(Status.INFO,"===Create a new org");
  		OrganizationInformationPage oip=new OrganizationInformationPage(driver);
- 		//String actOrgName=oip.getHeaderMsg().getText();
+ 		String actOrgName=oip.getHeaderMsg().getText();
  		if(actOrgName.contains(orgname)) {
  			System.out.println(orgname+" name is verified===PASS===");
  		}
